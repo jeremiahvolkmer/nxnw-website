@@ -286,6 +286,16 @@
     });
   });
 
+/**
+ * Refresh La Push Webcam Iframe 
+ */
+setInterval(function() {
+  // Select all iframes
+  Array.from(document.getElementById("la-push-cam").querySelectorAll('iframe')).forEach(function(iframe) {
+    iframe.src += ''; // setting src will reload the iframe
+  });
+}, 10000); // interval of 10 minutes
+
   /**
    * Initiate Pure Counter 
    */

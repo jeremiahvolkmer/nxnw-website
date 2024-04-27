@@ -298,7 +298,7 @@ color: darkgreen;
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #151515;
+  color: #fff;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -1546,4 +1546,39 @@ section {
   text-align: center;
   font-size: 13px;
   color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Nav social 
+--------------------------------------------------------------*/
+#social {
+  background: #fff;
+  padding: 0 0 30px 0;
+  color: #fff;
+  font-size: 14px;
+}
+
+#social .social-top {
+  background: #fff;
+  padding: 60px 0 30px 0;
+}
+#social .social-top .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background-image: linear-gradient(to right, rgb(107, 142, 218) , orange);
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 4px;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#social .social-top .social-links a:hover {
+  background: #ffc451;
+  color: #151515;
+  text-decoration: none;
 }
