@@ -43,7 +43,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #ffc451;
+  background-image: linear-gradient(to bottom, rgb(29, 121, 175) , orange);
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -787,7 +787,7 @@ section {
   z-index: 1;
   background: rgba(21, 21, 21, 0.6);
 }
-
+/* Working here */
 .portfolio .portfolio-wrap::before {
   content: "";
   background: rgba(21, 21, 21, 0.6);
@@ -799,10 +799,6 @@ section {
   transition: all ease-in-out 0.3s;
   z-index: 2;
   opacity: 0;
-}
-
-.portfolio .portfolio-wrap img {
-  transition: all ease-in-out 0.3s;
 }
 
 .portfolio .portfolio-wrap .portfolio-info {
@@ -819,6 +815,10 @@ section {
   justify-content: flex-end;
   align-items: flex-start;
   padding: 20px;
+}
+
+.portfolio .portfolio-wrap img {
+  transition: all ease-in-out 0.3s;
 }
 
 .portfolio .portfolio-wrap .portfolio-info h4 {
@@ -853,6 +853,7 @@ section {
   color: #ffc451;
 }
 
+/* Change color on hover */
 .portfolio .portfolio-wrap:hover::before {
   opacity: 1;
 }
@@ -1564,7 +1565,7 @@ section {
 #social .social-top .social-links a {
   font-size: 18px;
   display: inline-block;
-  background-image: linear-gradient(to right, rgb(107, 142, 218) , orange);
+  background-image: linear-gradient(to bottom, rgb(29, 121, 175) , orange);
   color: #fff;
   line-height: 1;
   padding: 8px 0;

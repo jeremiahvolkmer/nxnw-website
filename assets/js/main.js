@@ -173,7 +173,7 @@
     speed: 4000,
     loop: true,
     autoplay: {
-      delay: 1000,
+      delay: 0,
       disableOnInteraction: false
     },
     slidesPerView: 'auto',
@@ -294,7 +294,15 @@
     Array.from(document.getElementById("la-push-cam").querySelectorAll('iframe')).forEach(function(iframe) {
       iframe.src += ''; // setting src will reload the iframe
     });
-  }, 100000); // interval of 10 minutes
+  }, 10000); // interval of 10 minutes
+function linkIn() {
+  document.getElementById("img-fluid").forEach((item) => {
+    item.addEventListener("click", (event) => {
+      const image = event.target.getAttribute("data-src");
+      event.target.setAttribute("src", image);
+    });
+  });
+}
 
   /**
    * Initiate Pure Counter 
