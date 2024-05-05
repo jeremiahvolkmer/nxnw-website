@@ -298,7 +298,7 @@ color: darkgreen;
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #fff;
+  color: #151515;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -707,9 +707,10 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("../img/cta-bg.jpg") fixed center center;
-  background-size: cover;
-  padding: 60px 0;
+  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("../img/lost-surfboards.jpg") fixed center center;
+  background-size:cover;
+  
+  padding: 260px 0;
 }
 
 .cta h3 {
@@ -787,6 +788,7 @@ section {
   z-index: 1;
   background: rgba(21, 21, 21, 0.6);
 }
+
 /* Working here */
 .portfolio .portfolio-wrap::before {
   content: "";
@@ -865,6 +867,7 @@ section {
 .portfolio .portfolio-wrap:hover .portfolio-info {
   opacity: 1;
 }
+
 
 /*--------------------------------------------------------------
 # Portfolio Details
@@ -1582,3 +1585,20 @@ section {
   color: #151515;
   text-decoration: none;
 }
+
+/*--------------------------------------------------------------
+# NxNW Classic button
+--------------------------------------------------------------*/
+#classic {
+  border: none;
+  color: white;
+  border-radius: 8px;
+  text-align: center;
+  padding: 8px;
+  cursor: pointer;
+  font-size: 12px;
+  background-image: linear-gradient(to right, rgb(224, 228, 230) , rgb(53, 131, 37));
+}
+
+
+

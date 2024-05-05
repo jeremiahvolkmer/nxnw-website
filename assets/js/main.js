@@ -295,14 +295,16 @@
       iframe.src += ''; // setting src will reload the iframe
     });
   }, 10000); // interval of 10 minutes
-function linkIn() {
-  document.getElementById("img-fluid").forEach((item) => {
-    item.addEventListener("click", (event) => {
-      const image = event.target.getAttribute("data-src");
-      event.target.setAttribute("src", image);
-    });
-  });
-}
+
+  /**
+   * Button to launch NxNW classic
+   */
+
+  function onButtonClick() {
+    window.open("https://nxnwsurf.com/"); 
+  }
+  const classicButton = document.getElementById("classic");
+  classicButton.addEventListener('click', onButtonClick); 
 
   /**
    * Initiate Pure Counter 
